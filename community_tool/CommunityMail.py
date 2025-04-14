@@ -24,10 +24,10 @@ def send_test_mail(mail_content, phone_number=None):
         recipient = f"{phone_number}@docomo.ne.jp"
     subject = "4/15 電子回覧試験メール（テスト）"
     html_content = f"""
-    クリックして、事務局宛てに状況を送信してください。<br>
+    クリックして、事務局宛てに状況を送信してください。
     <ol>
-    <li><a href="mailto:自治会事務局宛て<{RECEIVE_ADDRESS}>?subject=電子回覧受信連絡&body=4/15 電子回覧を受信しました。">受信連絡（返信必須）</a></li>
-    <li><a href="https://densuke.biz/list?cd=prqvDkGC4VfBN7AV">いいねアンケート（回答任意）</a></li>
+    <li><a href="mailto:自治会事務局宛て<{RECEIVE_ADDRESS}>?subject=電子回覧受信連絡&body=4/15 電子回覧を受信しました。">受信連絡（返信必須：そのままの内容で送信）</a></li>
+    <li><a href="https://densuke.biz/list?cd=prqvDkGC4VfBN7AV">伝助いいねアンケート（回答任意）</a></li>
     </ol>
     """
 
